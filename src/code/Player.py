@@ -8,7 +8,7 @@ class Player:
         self.playerY = 480
         self.playerX_changer = 0
         self.playerY_changer = 0
-        self.sprite = pygame.image.load('./assets/img/space-invaders.png')
+        self.sprite = pygame.image.load('src//assets/img/space-invaders.png')
         self.screen = pygame.display.set_mode((800,600))
         self.name = ""
     
@@ -19,7 +19,7 @@ class Player:
     def checkCorners(self,playerXX,playerYY):
         if playerXX <= 0:
             playerXX = 0
-            print("0check")
+            # print("0check")
         elif playerYY <=0:
             playerYY = 0
         elif playerXX >= 736:
@@ -40,11 +40,6 @@ class Player:
         # text = font.render(str(counter), True, (0, 128, 0))
         # timer_event = pygame.USEREVENT+1
         # pygame.time.set_timer(timer_event, 1000)
-
-
-
-
-
         # run = True
         # while run:
         #     clock.tick(60)
