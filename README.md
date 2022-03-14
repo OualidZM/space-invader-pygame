@@ -31,4 +31,4 @@
 
 ## Start the game
 #
-        python main.py
+        python ./src/main.py
